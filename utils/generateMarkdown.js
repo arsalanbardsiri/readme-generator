@@ -1,13 +1,28 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (!license || license === 'None') return '';
+  if (!license || license === "None") return "";
   return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (!license || license === "None") return "";
+  // This can be expanded based on the various licenses
+  switch (license) {
+    case "MIT":
+      return "(https://opensource.org/licenses/MIT)";
+    case "ISC":
+      return "(https://opensource.org/licenses/ISC)";
+    case "Apache 2.0":
+      return "(https://opensource.org/license/apache-2-0)";
+    case "GNU GPLv3":
+      return "(https://opensource.org/license/lgpl-3-0)";
+    default:
+      return "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
