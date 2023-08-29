@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((answers) => {
       const markdownData = generateMarkdown(answers);
-      writeToFile("GENERATED_README.md", markdownData);
+      writeToFile("README.md", markdownData);
     })
     .catch((err) => {
       console.error("Error during prompting:", err);
