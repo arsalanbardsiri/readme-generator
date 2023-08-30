@@ -93,7 +93,7 @@ This project was diligently developed by [Arsalan Bardsiri](https://github.com/a
 
 For inquiries, feedback, or contributions, please contact:
 
-- Email: arsalanbardsiri@gmail.com
+- Email: <arsalanbardsiri@gmail.com>
 - GitHub: [github.com/arsalanbardsiri](https://github.com/arsalanbardsiri)
 
 ## License
